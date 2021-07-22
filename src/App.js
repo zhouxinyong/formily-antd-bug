@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import AntdForm from './AntdForm'
+import FormilyForm from './FormilyForm'
+import { Row, Col } from 'antd'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Row gutter={16} className="main">
+      <Col span={12}>
+        <div className="title">antd form</div>
+        <AntdForm />
+      </Col>
+      <Col span={12}>
+        <div className="title">formily form</div>
+        <FormilyForm />
+      </Col>
+    </Row>
+  )
 }
 
-export default App;
+export default App
