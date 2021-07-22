@@ -16,7 +16,7 @@ const schema = {
   type: 'object',
   properties: {
     cname: {
-      title: '任务名称',
+      title: '活动名称',
       type: 'string',
       'x-decorator': 'FormItem',
       'x-component': 'Input',
@@ -26,7 +26,7 @@ const schema = {
       'x-index': 0,
     },
     path: {
-      title: '镜像仓库地址',
+      title: '任务',
       type: 'string',
       'x-decorator': 'FormItem',
       'x-component': 'Input',
@@ -36,7 +36,7 @@ const schema = {
       'x-index': 1,
     },
     path1: {
-      title: 'Dockerfile 路径',
+      title: '奖品',
       type: 'string',
       'x-decorator': 'FormItem',
       'x-component': 'Input',
@@ -45,7 +45,7 @@ const schema = {
       'x-index': 2,
     },
     path2: {
-      title: 'Context Path',
+      title: '收获地址',
       type: 'string',
       'x-decorator': 'FormItem',
       'x-component': 'Input',
